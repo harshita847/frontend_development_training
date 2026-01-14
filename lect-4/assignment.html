@@ -7,75 +7,59 @@
     <title>Document</title>
     <style>
         #parent {
+
+            width: 1000px;
             height: 400px;
-            width: 300px;
-            border: 2px solid;
-            transition:3s;
-            border-radius: 10px;
-            margin: 10px auto;
-            /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
-            box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-            /* auto works for left and right */
-            position: relative;
+            border: 2px solid black;
+        }
 
+        #parent:hover .one {
+            margin-left: 900px;
+        }
+
+        .one {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%
+        }
+
+        #one {
+            background-color: aquamarine;
+            transition: 3s;
+            transition-timing-function: ease-in;
+        }
+
+        #two {
+            background-color: black;
+            transition: 3s;
+            transition-timing-function: ease;
 
         }
 
-        #child1{
-            position: absolute;
-            height:50%;
-            width:100%;
+        #three {
+            background-color: brown;
+            transition: 3s;
+            transition-timing-function: ease-in;
         }
-        #child2{
-            position: absolute;
-            height:50%;
-            width:100%;
-            top:50%;
-            
-        }
-        #child1 img{
-            height:100%;
-            width:100%
-        }
-        #child2 img{
-            height:70%;
-            width:40%;
-            position:relative;
-            border-radius:50%;
-            top:-50px;
-            left:80px;
 
-
+        #four {
+            background-color: blue;
+            transition: 3s;
+            transition-timing-function: ease-in-out;
         }
-        #parent:hover{
-            transform:scale(1.1);
-            transform:rotate(360deg);
-
-        }
-        
-
-        /* #child {
-            position: absolute;
-            top: 190px;
-            left: 120px;
-            border-radius: 50px;
-        } */
     </style>
+
 </head>
 
 <body>
-    <div id="parent">
-        <div id="child1"><img
-                src="https://images.unsplash.com/photo-1493612276216-ee3925520721?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="photo" >
-        </div>
-        <div id="child2">
-         <img src="https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="photo">
-
+    <div>
+        <div id="parent">
+            <div id="one" class="one"> </div>
+            <div id="two" class="one"> </div>
+            <div id="three" class="one"> </div>
+            <div id="four" class="one"> </div>
 
         </div>
-    </div>
 </body>
 
 </html>
