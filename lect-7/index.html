@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<width>>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #superparent{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        
+        
+        #parent{
+            background-color:white;
+            height:400px;
+            width:100%;
+             margin:50px; 
+            display:flex;
+            justify-content: space-between;
+             justify-content: center;
+            align-items: center;
+            gap:10px;
+        
+
+
+        }
+        
+        .one{
+            height: 100px;
+            width:100px;
+            background-color:burlywood;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #child1{
+            flex-basis: 1;
+        }
+
+    </style>
+</head>
+<body id="superparent" style="background-color: lightcoral;">
+    <!-- <h1 style="text-align: center;"> flexbox parent property</h1> -->
+    <div id="parent">
+     <div id="child1" class="one"> 
+        <h1>1</h1>
+     </div>
+      <div id="child2" class="one"><h1>2</h1> </div>
+       <div id="child3" class="one"><h1>3</h1></div>
+        <div id="child4" class="one"><h1>4</h1></div>
+         <div id="child4" class="one"><h1>5</h1></div>
+          <div id="child4" class="one"><h1>6</h1></div>
+
+
+    </div>
+</body>
+</html>
