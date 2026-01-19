@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            perspective: 900px;
+        }
+        #main{
+        height:500px;
+        width:500px;
+        margin:50px auto;
+        /* background-color: aqua; */
+        position:relative;
+        transform-style: preserve-3d;
+        transition: 3s;
+       
+    
+        }
+        #main:hover{
+            transform: rotateY(180deg);
+        }
+        #card_a{
+            height:50%;
+            width:100%;
+            z-index: 3;
+            position:absolute;
+            backface-visibility: hidden;
+        }
+         img{
+            height:100%;
+            width:100%;
+        
+        }
+        #carb_b{
+            height:50%;
+            width:100%;
+            position:absolute;
+            z-index: 2;
+            transform: rotateY(180deg);
+            background-color:brown;
+        }
+         
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="card_a">
+        <img src="https://images.unsplash.com/photo-1508138221679-760a23a2285b?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="photo"></div>
+        <div id="card_b">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsum eligendi iste et, voluptas eaque sit facere q</p>
+        </div>
+    </div>
+</body>
+</html>
