@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            color: black;
+            text-align: center;
+            font-style: oblique;
+            position: relative;
+
+        }
+
+        #linear {
+            display: flex;
+            justify-content: left;
+            gap: 10px;
+            text-align: right;
+        }
+
+        .one {
+            height: 190px;
+            width: 190px;
+            border-radius: 5px;
+        }
+
+        #child1 {
+            background: linear-gradient(red, blue);
+        }
+
+        #child2 {
+            background: linear-gradient(to right, green, black);
+        }
+
+        #child3 {
+            background: linear-gradient(60deg, black, yellow);
+        }
+
+
+        #radial {
+            position: absolute;
+            top: 300px;
+            display: flex;
+            justify-content: left;
+            gap: 10px;
+            text-align: right;
+        }
+
+        .two {
+            height: 190px;
+            width: 190px;
+            border-radius: 5px;
+        }
+
+        #c1 {
+            background: radial-gradient(circle, red, green, yellow);
+        }
+
+        #c2 {
+            background: radial-gradient(circle at left, rgb(118, 118, 159), yellow, rgb(144, 68, 68));
+        }
+
+        #c3 {
+            background: repeating-radial-gradient(circle, white 0px,
+                    white 10px, black 10px, black 20px);
+        }
+
+        #conic {
+            position: absolute;
+            top: 550px;
+            display: flex;
+            justify-content: left;
+            gap: 10px;
+            text-align: right;
+        }
+
+        .three {
+            height: 190px;
+            width: 190px;
+            border-radius: 5px;
+
+
+
+
+        }
+
+        #d1 {
+            background: conic-gradient(red, green, yellow);
+        }
+
+        #d2 {
+            background: conic-gradient(from 180deg at 50% 50%, rgb(203, 213, 203), yellow, red);
+        }
+
+        #d3 {
+            background: repeating-conic-gradient(red 0deg,
+                    red 10deg, black 10deg, black 20deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>😎😎 css-background colour property 😍</h1>
+    <div id="linear">
+        <h1>1. linear gradient </h1>
+        <div id="child1" class="one"></div>
+        <div id="child2" class="one"></div>
+        <div id="child3" class="one"></div>
+    </div>
+
+
+    <div id="radial">
+        <h1>2. radial gradient </h1>
+        <div id="c1" class="two"></div>
+        <div id="c2" class="two"></div>
+        <div id="c3" class="two"></div>
+    </div>
+
+
+    <div id="conic">
+        <h1>3. conic gradient </h1>
+        <div id="d1" class="three"></div>
+        <div id="d2" class="three"></div>
+        <div id="d3" class="three"></div>
+    </div>
+</body>
+
+</html>

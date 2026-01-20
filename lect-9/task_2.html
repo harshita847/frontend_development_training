@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: linear-gradient(skyblue, rgb(169, 219, 239));
+            height: 100vh;
+            position: relative;
+            
+
+        }
+        #balloon{
+            display:flex;
+            justify-content: space-between;
+
+        }
+
+        #heading {
+            font-style: italic;
+            text-align: center;
+            font-size: 50px;
+            color: brown;
+        }
+        .element{
+            height:120px;
+            width:90px;
+            border-radius: 60%;
+
+        }
+        #one{
+            background-color:coral;
+            margin:400px;
+            transition-timing-function: ease-in;
+            transition: 3s;
+
+
+            
+            
+        }
+        #two{
+            background-color:red;
+            margin:400px;
+            transition-timing-function: ease-out;
+            transition: 3s;
+        }
+        #three{
+            background-color: yellow;
+            margin:400px;
+            transition-timing-function: ease-in;
+            transition: 3s;
+        }
+        #four{
+            background-color:green;
+            transition-timing-function: ease-out;
+            margin:400px;
+            transition: 3s;
+            transform: translateY(100vh);
+        }
+
+        #box {
+            height: 200px;
+            width: 100vw;
+            background-color: green;
+            position: absolute;
+            top: 500px;
+
+
+        }
+
+        #sun {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background: linear-gradient(red, orange, yellow);
+            position: absolute;
+            right: 50px;
+            top: 4px;
+            animation-name: sun;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes sun {
+
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sun">
+
+    </div>
+    <div id="heading">
+        Welcome to balloon festival
+
+    </div>
+    <div id="box">
+
+    </div>
+    <div id="balloon">
+        <div id="one" class="element"></div>
+         <div id="two" class="element"></div>
+          <div id="three" class="element"></div>
+           <div id="four" class="element"></div>
+            <div id="five" class="element"></div>
+    </div>
+</body>
+
+</html>
