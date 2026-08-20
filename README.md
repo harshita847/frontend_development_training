@@ -1,1 +1,1 @@
-this repo consist of code i have written during my frontend learning in 4th semester 
+this repositry  consist of code i have written during my frontend development learning in 4th semester 
