@@ -12,8 +12,8 @@
            <script> -->
             <script>
 
-    // nan ,0 ,empty string, undefined are falsy values in if else condition they print else part
-       let age='';
+    // nan ,0 ,empty string,null, undefined are falsy values in if else condition they print else part
+       let age=19;
        if(age){
         console.log('valid');
 
@@ -24,6 +24,12 @@
         
        }
 
+
+       // trenary operator 
+
+    let result=   age>18 ? 'can vote' : 'not vote';
+    console.log(result);
+    
             </script>
 
 </body>
